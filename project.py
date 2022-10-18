@@ -62,7 +62,7 @@ def main_polish_choice():
         print('You have selected an incorrect option. Please Try again.\n')
         main_polish_choice()
 
-    main_sentence = ('Okay, please use ' + nail_polish_random + 'for your main polish.')
+    main_sentence = ('Okay, please use ' + nail_polish_random + ' for your main polish.')
     print(main_sentence)
 
 main_polish_choice()
@@ -78,7 +78,7 @@ def choose_unicorn_topper():
     return topper_polish_random
 
 def topper_polish_choice():
-    topper_polish = (input('What nail polish topper type would you like? Please choose: Holo or Unicorn Skin'))
+    topper_polish = (input('What nail polish topper type would you like? Please choose: Holo or Unicorn Skin\n'))
 
     if topper_polish == 'Holo':
         topper_polish_random = str(choose_holo_topper())
@@ -88,7 +88,7 @@ def topper_polish_choice():
         print('You have selected an incorrect option. Please Try again.\n')
         topper_polish_choice()
     
-    topper_sentence = ('Okay! Please use ' + topper_polish_random + 'for your topper polish.')
+    topper_sentence = ('Okay! Please use ' + topper_polish_random + ' for your topper polish.')
     print(topper_sentence)
 
 topper_polish_choice()
@@ -102,3 +102,7 @@ def choose_finish_polish():
 nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish()) + '.'
 
 print(nail_finish_choice)
+
+# Ending program notes
+
+print('Thank you for using this program. \nPlease remember to give your nails plenty of time to dry. \nEnjoy your fun new look!')
