@@ -48,6 +48,7 @@ def choose_multichrome():
 def choose_holo():
     nail_holo_random = random.choice(nail_rainbow_holo)
     return nail_holo_random
+
 def main_polish_choice():
     main_polish = (input('What main polish box would you like? Please choose: Metallics, Multichrome, or Rainbow Holo.\n'))
 
@@ -76,6 +77,20 @@ def choose_unicorn_topper():
     topper_polish_random = random.choice(nail_topper_unicorn)
     return topper_polish_random
 
-def topper_user_choice():
+def topper_polish_choice():
     topper_polish = (input('What nail polish topper type would you like? Please choose: Holo or Unicorn Skin'))
 
+    if topper_polish == 'Holo':
+        topper_polish_random = str(choose_holo_topper())
+    elif topper_polish == 'Unicorn Skin':
+        topper_polish_random = str(choose_unicorn_topper())
+    else:
+        print('You have selected an incorrect option. Please Try again.\n')
+        topper_polish_choice()
+    
+    topper_sentence = ('Okay! Please use ' + topper_polish_random + 'for your topper polish.')
+    print(topper_sentence)
+
+topper_polish_choice()
+
+# Finish polish function
