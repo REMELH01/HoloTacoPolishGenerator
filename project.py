@@ -94,3 +94,11 @@ def topper_polish_choice():
 topper_polish_choice()
 
 # Finish polish function
+
+def choose_finish_polish(): 
+    nail_finish_random = random.choice(nail_finishes) 
+    return nail_finish_random
+
+nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish()) + '.'
+
+print(nail_finish_choice)
