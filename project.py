@@ -6,53 +6,64 @@ import pandas as pd
 
 nail_base = ('Smoothing Base', 'Peely Base', 'Long Lasting Base')
 
-# Boxes will be categorized as 'Metalics', 'Rainbow Holo', or 'Multichrome'.
+# Boxes will be categorized as 'Metallics', 'Rainbow Holo', or 'Multichrome'.
 
-nail_metalics = ('Gift Reciept', 'Cold Shoulder', 'Cheap Champagne', 'Mint Money', 'Fake Date')
+nail_metallics = ('Gift Reciept', 'Cold Shoulder', 'Cheap Champagne', 'Mint Money', 'Fake Date')
 
 nail_rainbow_holo = ('Blue Freezie', 'Purple Slushie', 'Magenta Jelly', 'Red Licorice', 'Orange Drink', 'Lemon Sucker', 'Green Taffy')
 
 nail_multichrome = ('Chameleon Coat', "Blue Ain't Slick", 'Missed-Shift', 'Purple with Envy', "Cats' Evation")
 
-nail_toppers = ('Aurora Unicorn Skin', 'Solar Unicorn Skin', 'Cosmic Unicorn Skin', 'Flakie Holo Taco', 'Linear Holo Taco', 'Scattered Holo Taco', 'Sonic Unicorn Skin', 'Galatic Unicorn Skin', 'Lunar Unicorn Skin')
+nail_topper_holo = ('Flakie Holo Taco', 'Linear Holo Taco', 'Scattered Holo Taco')
+
+# Toppers will be categoized as 'Holo Topper' and 'Unicorn Skin Topper'
+
+nail_topper_unicorn = ('Aurora Unicorn Skin', 'Solar Unicorn Skin', 'Cosmic Unicorn Skin', 'Sonic Unicorn Skin', 'Galatic Unicorn Skin', 'Lunar Unicorn Skin')
 
 nail_finishes = ('Glossy Taco', 'Super Glossy Taco', 'Matte Taco')
 
-polish_types = [nail_rainbow_holo, nail_metalics, nail_multichrome]
-
-#start program
+# Start program
 
 print('Hello! We will be using Holo Taco nail polishes for this program.')
 
 # Polish base choice 
 def choose_base_polish(): 
-
     nail_base_random = random.choice(nail_base) 
+    return nail_base_random
 
-nail_base_choice = 'First, start with a base of ' + str(choose_base_polish) + '.'
+nail_base_choice = 'First, start with a base of ' + str(choose_base_polish()) + '.'
+
+print(nail_base_choice)
 
 # Main nail polish choice
 
-main_polish = (input('What main polish box would you like?'))
+def choose_metallics():
+    nail_polish_random = random.choice(nail_metallics)
+    return nail_polish_random
 
-print(main_polish)
+def choose_multichrome():
+    nail_polish_random = random.choice(nail_multichrome)
+    return nail_polish_random
 
-user_polish_choice = 'Metalics', 'Multichrome', 'Rainbow Holo'
+def choose_holo():
+    nail_holo_random = random.choice(nail_rainbow_holo)
+    return nail_holo_random
+def main_polish_choice():
+    main_polish = (input('What main polish box would you like? Please choose: Metallics, Multichrome, or Rainbow Holo.\n'))
 
-def choose_main_metalics():
-    nail_metalics_random = random.choice(nail_metalics)
+    if main_polish == 'Metallics':
+        nail_polish_random = str(choose_metallics())
+    elif main_polish == 'Multichrome':
+        nail_polish_random = str(choose_multichrome())
+    elif main_polish == 'Rainbow Holo':
+        nail_polish_random = str(choose_holo())
+    else:
+        print('You have selected an incorrect option. Please Try again.\n')
+        main_polish_choice()
 
-def choose_main_multichrome():
-    nail_metalics_random = random.choice(nail_multichrome)
+    main_sentence = ('Okay, please use ' + nail_polish_random + '.')
+    print(main_sentence)
 
-def choose_main_holo():
-    nail_metalics_random = random.choice(nail_rainbow_holo)
+main_polish_choice()
 
-if user_polish_choice == 'Metalics'
-    metalics_sentence = 'Okay, please use ' + str(choose_main_metalics) + '.'
-    print(metalics_sentence)
-elif user_polish_choice == 'Multichrome'
-    multichrome_sentence = 'Okay, please use ' + str(choose_main_multichrome) + '.'
-    print(multichrome_sentence)
-else:
-    rainbow_holo_sentence = 'Okay, please use ' + str(choose_main_holo) + '.'
+# Topper nail polish choice choice
