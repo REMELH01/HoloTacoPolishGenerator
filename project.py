@@ -67,3 +67,15 @@ def main_polish_choice():
 main_polish_choice()
 
 # Topper nail polish choice choice
+
+def choose_holo_topper():
+    topper_polish_random = random.choice(nail_topper_holo)
+    return topper_polish_random
+
+def choose_unicorn_topper():
+    topper_polish_random = random.choice(nail_topper_unicorn)
+    return topper_polish_random
+
+def topper_user_choice():
+    topper_polish = (input('What nail polish topper type would you like? Please choose: Holo or Unicorn Skin'))
+
