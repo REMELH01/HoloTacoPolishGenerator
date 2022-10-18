@@ -1,6 +1,6 @@
-from ast import main
 import random
 
+## Lists here
 # Changing to make interactive with inputs.
 
 nail_base = ('Smoothing Base', 'Peely Base', 'Long Lasting Base')
@@ -29,6 +29,7 @@ def choose_base_polish():
     return nail_base_random
 
 nail_base_choice = 'First, start with a base of ' + str(choose_base_polish()) + '.'
+
 
 # Main nail polish choice
 
@@ -90,7 +91,6 @@ def topper_polish_choice():
             print(topper_sentence)
 
 
-
 # Finish polish function
 
 def choose_finish_polish(): 
@@ -100,7 +100,7 @@ def choose_finish_polish():
 nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish()) + '.'
 
 
-
+# Program here
 
 if __name__ == '__main__':
     # Start program
