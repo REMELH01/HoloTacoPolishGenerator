@@ -1,12 +1,11 @@
+from ast import main
 import random
-
-import pandas as pd
 
 # Changing to make interactive with inputs.
 
 nail_base = ('Smoothing Base', 'Peely Base', 'Long Lasting Base')
 
-# Boxes will be categorized as 'Metallics', 'Rainbow Holo', or 'Multichrome'.
+# Main polishes will be categorized as 'Metallics', 'Rainbow Holo', or 'Multichrome'.
 
 nail_metallics = ('Gift Reciept', 'Cold Shoulder', 'Cheap Champagne', 'Mint Money', 'Fake Date')
 
@@ -22,18 +21,14 @@ nail_topper_unicorn = ('Aurora Unicorn Skin', 'Solar Unicorn Skin', 'Cosmic Unic
 
 nail_finishes = ('Glossy Taco', 'Super Glossy Taco', 'Matte Taco')
 
-# Start program
-
-print('Hello! We will be using Holo Taco nail polishes for this program.')
 
 # Polish base choice 
+
 def choose_base_polish(): 
     nail_base_random = random.choice(nail_base) 
     return nail_base_random
 
 nail_base_choice = 'First, start with a base of ' + str(choose_base_polish()) + '.'
-
-print(nail_base_choice)
 
 # Main nail polish choice
 
@@ -50,6 +45,7 @@ def choose_holo():
     return nail_holo_random
 
 def main_polish_choice():
+    nail_polish_random = None
     main_polish = (input('What main polish box would you like? Please choose: Metallics, Multichrome, or Rainbow Holo.\n'))
 
     if main_polish == 'Metallics':
@@ -62,10 +58,10 @@ def main_polish_choice():
         print('You have selected an incorrect option. Please Try again.\n')
         main_polish_choice()
 
-    main_sentence = ('Okay, please use ' + nail_polish_random + ' for your main polish.')
-    print(main_sentence)
+    main_sentence = ('Okay, please use ' + str(nail_polish_random) + ' for your main polish.')
+    if nail_polish_random is not None:
+            print(main_sentence)
 
-main_polish_choice()
 
 # Topper nail polish choice choice
 
@@ -78,6 +74,7 @@ def choose_unicorn_topper():
     return topper_polish_random
 
 def topper_polish_choice():
+    topper_polish_random = None
     topper_polish = (input('What nail polish topper type would you like? Please choose: Holo or Unicorn Skin\n'))
 
     if topper_polish == 'Holo':
@@ -88,10 +85,11 @@ def topper_polish_choice():
         print('You have selected an incorrect option. Please Try again.\n')
         topper_polish_choice()
     
-    topper_sentence = ('Okay! Please use ' + topper_polish_random + ' for your topper polish.')
-    print(topper_sentence)
+    topper_sentence = ('Okay! Please use ' + str(topper_polish_random) + ' for your topper polish.')
+    if topper_polish_random is not None:
+            print(topper_sentence)
 
-topper_polish_choice()
+
 
 # Finish polish function
 
@@ -101,8 +99,19 @@ def choose_finish_polish():
 
 nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish()) + '.'
 
-print(nail_finish_choice)
 
-# Ending program notes
 
-print('Thank you for using this program. \nPlease remember to give your nails plenty of time to dry. \nEnjoy your fun new look!')
+
+if __name__ == '__main__':
+    # Start program
+    print('Hello! We will be using Holo Taco nail polishes for this program.')
+    # Polish base random choice
+    print(nail_base_choice)
+    # Main polish user choice
+    main_polish_choice()
+    # Topper polish user choice 
+    topper_polish_choice()
+    # Nail finish 
+    print(nail_finish_choice)
+    #Ending program notes
+    print('Thank you for using this program. \nPlease remember to give your nails plenty of time to dry. \nEnjoy your fun new look!')
