@@ -14,9 +14,9 @@ nail_rainbow_holo = ('Blue Freezie', 'Purple Slushie', 'Magenta Jelly', 'Red Lic
 
 nail_multichrome = ('Chameleon Coat', "Blue Ain't Slick", 'Missed-Shift', 'Purple with Envy', "Cats' Evation")
 
-nail_topper_holo = ('Flakie Holo Taco', 'Linear Holo Taco', 'Scattered Holo Taco')
-
 # Toppers will be categoized as 'Holo Topper' and 'Unicorn Skin Topper'
+
+nail_topper_holo = ('Flakie Holo Taco', 'Linear Holo Taco', 'Scattered Holo Taco')
 
 nail_topper_unicorn = ('Aurora Unicorn Skin', 'Solar Unicorn Skin', 'Cosmic Unicorn Skin', 'Sonic Unicorn Skin', 'Galatic Unicorn Skin', 'Lunar Unicorn Skin')
 
@@ -61,7 +61,7 @@ def main_polish_choice():
         print('You have selected an incorrect option. Please Try again.\n')
         main_polish_choice()
 
-    main_sentence = ('Okay, please use ' + nail_polish_random + '.')
+    main_sentence = ('Okay, please use ' + nail_polish_random + 'for your main polish.')
     print(main_sentence)
 
 main_polish_choice()
