@@ -1,4 +1,8 @@
 import random
+from time import sleep
+
+seconds = 2
+sleep(seconds)
 
 ## Lists here
 # Changing to make interactive with inputs.
@@ -105,13 +109,22 @@ nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish
 if __name__ == '__main__':
     # Start program
     print('Hello! We will be using Holo Taco nail polishes for this program.')
+    sleep(2)
     # Polish base random choice
     print(nail_base_choice)
+    sleep(2)
     # Main polish user choice
     main_polish_choice()
+    sleep(2)
     # Topper polish user choice 
     topper_polish_choice()
+    sleep(2)
     # Nail finish 
     print(nail_finish_choice)
+    sleep(2)
     #Ending program notes
-    print('Thank you for using this program. \nPlease remember to give your nails plenty of time to dry. \nEnjoy your fun new look!')
+    print('Thank you for using this program.')
+    sleep(2)
+    print('Please remember to give your nails plenty of time to dry.')
+    sleep(2)
+    print('Enjoy your fun new look!')
