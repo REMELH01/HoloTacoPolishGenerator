@@ -128,4 +128,4 @@ if __name__ == '__main__':
     print('Please remember to give your nails plenty of time to dry.')
     sleep(2)
     print('Enjoy your fun new look!')
-    sleep(2)
+    sleep(100)
