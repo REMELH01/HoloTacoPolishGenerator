@@ -5,10 +5,12 @@ This project is a nail polish generator using nail polishes made and sold by Hol
 
 ## Technologies 
 - Python 
+- Matplotlib
 
 ## Getting Started 
 1. Clone 'https://github.com/REMELH01/HoloTacoPolishGenerator' 
-2. Respond to the inputs within the program when it begins. 
+2. Make sure you have matplotlib installed.
+3. Respond to the inputs within the program when it begins. 
 
 ## Features 
 1. Includes lists of data in the form of nail polish names, separated by the type of nail polish it is. 
