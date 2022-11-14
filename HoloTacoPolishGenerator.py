@@ -167,10 +167,8 @@ plt.show()
 x_axis = ['Bases', 'Main Polishes', 'Toppers', 'Finishes']
 y_axis = ['3', '17', '9', '3']
 figure(figsize=(12, 6), dpi=80)
-plt.bar(nail_polishes, number_nail_polishes)
+plt.bar(program_polishes, number_program_polishes)
 plt.title('Amounts of Polishes in Each Polish Type', fontsize=12)
 plt.xlabel('Category of Polish', fontsize=8)
 plt.ylabel('Amount of Polishes', fontsize=8)
 plt.show()
-
-#need to change plots to subplots so they print in same window
