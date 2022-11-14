@@ -121,6 +121,14 @@ if __name__ == '__main__':
     # Start program
     print('Hello! We will be using Holo Taco nail polishes for this program.')
     sleep(2)
+    print('For this program, there are ' + str(len(nail_base)) + ' nail base options,')
+    sleep(1)
+    print(str(len(nail_metallics + nail_rainbow_holo + nail_multichrome)) + ' main nail polish options,')
+    sleep(1)
+    print(str(len(nail_topper_holo + nail_topper_unicorn)) + ' topper polish optins,')
+    sleep(1)
+    print('and ' + str(len(nail_finishes)) + ' nail finish options.')
+    sleep(2)
     # Polish base random choice
     print(nail_base_choice)
     sleep(2)
@@ -140,6 +148,8 @@ if __name__ == '__main__':
     sleep(2)
     print('Enjoy your fun new look!')
     sleep(2)
+    print('Stay tuned for graphical data regarding how many nail polishes are included in this program!')
+    sleep(1)
 
 ## Vizulaizations 
 #Totals for all lists
