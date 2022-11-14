@@ -1,6 +1,8 @@
 import random
 from time import sleep
 
+import matplotlib.pyplot as plt
+
 seconds = 2
 sleep(seconds)
 
@@ -25,6 +27,15 @@ nail_topper_unicorn = ('Aurora Unicorn Skin', 'Solar Unicorn Skin', 'Cosmic Unic
 
 nail_finishes = ('Glossy Taco', 'Super Glossy Taco', 'Matte Taco')
 
+#Lists for polish numbers
+
+nail_polishes = 'Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers'
+
+number_nail_polishes = len(nail_base), len(nail_metallics), len(nail_rainbow_holo), len(nail_multichrome), len(nail_topper_holo), len(nail_topper_unicorn), len(nail_finishes)
+
+program_polishes = 'Bases', 'Main Polishes', 'Toppers', 'Finishes'
+
+number_program_polishes = len(nail_base), len(nail_metallics + nail_rainbow_holo + nail_multichrome), len(nail_topper_holo + nail_topper_unicorn), len(nail_finishes)
 
 # Polish base choice 
 
@@ -128,4 +139,26 @@ if __name__ == '__main__':
     print('Please remember to give your nails plenty of time to dry.')
     sleep(2)
     print('Enjoy your fun new look!')
-    sleep(100)
+    sleep(2)
+
+## Vizulaizations 
+#Totals for all lists
+x_axis = ['Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers']
+y_axis = ['3', '5', '7', '5', '3', '6', '3']
+
+plt.bar(nail_polishes, number_nail_polishes)
+plt.title('Amounts of Polishes in Each List', fontsize=12)
+plt.xlabel('Type of Polish', fontsize=8)
+plt.ylabel('Amount of Polishes', fontsize=8)
+plt.show()
+
+
+#Totals for nail polish types
+x_axis = ['Bases', 'Main Polishes', 'Toppers', 'Finishes']
+y_axis = ['3', '17', '9', '3']
+
+plt.bar(nail_polishes, number_nail_polishes)
+plt.title('Amounts of Polishes in Each Polish Type', fontsize=12)
+plt.xlabel('Category of Polish', fontsize=8)
+plt.ylabel('Amount of Polishes', fontsize=8)
+plt.show()
