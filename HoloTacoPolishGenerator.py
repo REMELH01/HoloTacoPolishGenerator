@@ -1,7 +1,7 @@
 import random
 from time import sleep
-
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
 
 seconds = 2
 sleep(seconds)
@@ -155,7 +155,7 @@ if __name__ == '__main__':
 #Totals for all lists
 x_axis = ['Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers']
 y_axis = ['3', '5', '7', '5', '3', '6', '3']
-
+figure(figsize=(12, 6), dpi=80)
 plt.bar(nail_polishes, number_nail_polishes)
 plt.title('Amounts of Polishes in Each List', fontsize=12)
 plt.xlabel('Type of Polish', fontsize=8)
@@ -166,7 +166,7 @@ plt.show()
 #Totals for nail polish types
 x_axis = ['Bases', 'Main Polishes', 'Toppers', 'Finishes']
 y_axis = ['3', '17', '9', '3']
-
+figure(figsize=(12, 6), dpi=80)
 plt.bar(nail_polishes, number_nail_polishes)
 plt.title('Amounts of Polishes in Each Polish Type', fontsize=12)
 plt.xlabel('Category of Polish', fontsize=8)
