@@ -172,3 +172,5 @@ plt.title('Amounts of Polishes in Each Polish Type', fontsize=12)
 plt.xlabel('Category of Polish', fontsize=8)
 plt.ylabel('Amount of Polishes', fontsize=8)
 plt.show()
+
+#need to change plots to subplots so they print in same window
