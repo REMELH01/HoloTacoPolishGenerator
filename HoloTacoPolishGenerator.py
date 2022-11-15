@@ -2,6 +2,7 @@ import random
 from time import sleep
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+import statistics
 
 seconds = 2
 sleep(seconds)
@@ -47,7 +48,11 @@ topper_numbers = len(nail_topper_holo), len(nail_topper_unicorn)
 
 finish_numbers = len(nail_finishes)
 
-average_numbers = sum(number_program_polishes)/4
+mean_numbers = statistics.mean(number_program_polishes)
+
+median_numbers = statistics.median(number_program_polishes)
+
+mode_number = statistics.mode(number_program_polishes)
 
 sum_number = sum(number_program_polishes)
 
@@ -145,7 +150,12 @@ if __name__ == '__main__':
     sleep(1)
     print('and ' + str(finish_numbers) + ' nail finish options.')
     sleep(2)
-    print('There is an average of ' + str(average_numbers) + ' polishes in each category.')
+    print('There is an average of ' + str(mean_numbers) + ' nail polishes in each category.')
+    sleep(2)
+    print('There is an median of ' + str(median_numbers) + ' nail polishes in each category.')
+    sleep(2)
+    print('There is an mode of ' + str(mode_number) + ' nail polishes in each category.')
+    sleep(2)
     # Polish base random choice
     print(nail_base_choice)
     sleep(2)

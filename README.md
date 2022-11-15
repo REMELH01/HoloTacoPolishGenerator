@@ -9,6 +9,7 @@ In this project, there are 4 categories for the nail polishes: Base, Main, Toppe
 ## Technologies 
 - Python 
 - Matplotlib
+- Statistics
 
 ## Getting Started 
 1. Clone 'https://github.com/REMELH01/HoloTacoPolishGenerator' 
