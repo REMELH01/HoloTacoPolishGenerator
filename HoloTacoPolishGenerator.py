@@ -31,11 +31,25 @@ nail_finishes = ('Glossy Taco', 'Super Glossy Taco', 'Matte Taco')
 
 nail_polishes = 'Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers'
 
-number_nail_polishes = len(nail_base), len(nail_metallics), len(nail_rainbow_holo), len(nail_multichrome), len(nail_topper_holo), len(nail_topper_unicorn), len(nail_finishes)
+total_polish_numbers = len(nail_base), len(nail_metallics), len(nail_rainbow_holo), len(nail_multichrome), len(nail_topper_holo), len(nail_topper_unicorn), len(nail_finishes)
 
 program_polishes = 'Bases', 'Main Polishes', 'Toppers', 'Finishes'
 
 number_program_polishes = len(nail_base), len(nail_metallics + nail_rainbow_holo + nail_multichrome), len(nail_topper_holo + nail_topper_unicorn), len(nail_finishes)
+
+# Calculations
+
+base_numbers = len(nail_base)
+
+main_numbers = len(nail_metallics), len(nail_rainbow_holo), len(nail_multichrome)
+
+topper_numbers = len(nail_topper_holo), len(nail_topper_unicorn)
+
+finish_numbers = len(nail_finishes)
+
+average_numbers = sum(number_program_polishes)/4
+
+sum_number = sum(number_program_polishes)
 
 # Polish base choice 
 
@@ -118,17 +132,20 @@ nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish
 # Program here
 
 if __name__ == '__main__':
-    # Start program
+    # Start program with numbers
     print('Hello! We will be using Holo Taco nail polishes for this program.')
     sleep(2)
-    print('For this program, there are ' + str(len(nail_base)) + ' nail base options,')
+    print('There are a total of ' + str(sum_number) + ' nail polishes in this program.')
     sleep(1)
-    print(str(len(nail_metallics + nail_rainbow_holo + nail_multichrome)) + ' main nail polish options,')
+    print('There are ' + str(base_numbers) + ' nail base options,')
     sleep(1)
-    print(str(len(nail_topper_holo + nail_topper_unicorn)) + ' topper polish optins,')
+    print(str(len(main_numbers)) + ' main nail polish options,')
     sleep(1)
-    print('and ' + str(len(nail_finishes)) + ' nail finish options.')
+    print(str(len(topper_numbers)) + ' topper polish optins,')
+    sleep(1)
+    print('and ' + str(finish_numbers) + ' nail finish options.')
     sleep(2)
+    print('There is an average of ' + str(average_numbers) + ' polishes in each category.')
     # Polish base random choice
     print(nail_base_choice)
     sleep(2)
@@ -156,7 +173,7 @@ if __name__ == '__main__':
 x_axis = ['Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers']
 y_axis = ['3', '5', '7', '5', '3', '6', '3']
 figure(figsize=(12, 6), dpi=80)
-plt.bar(nail_polishes, number_nail_polishes)
+plt.bar(nail_polishes, total_polish_numbers)
 plt.title('Amounts of Polishes in Each List', fontsize=12)
 plt.xlabel('Type of Polish', fontsize=8)
 plt.ylabel('Amount of Polishes', fontsize=8)
