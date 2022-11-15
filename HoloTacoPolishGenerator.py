@@ -178,6 +178,7 @@ if __name__ == '__main__':
     print('Stay tuned for graphical data regarding how many nail polishes are included in this program!')
     sleep(1)
 
+
 ## Vizulaizations 
 #Totals for all lists
 x_axis = ['Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers']

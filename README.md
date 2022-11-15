@@ -19,7 +19,7 @@ In this project, there are 4 categories for the nail polishes: Base, Main, Toppe
 ## Features 
 1. Includes lists of data in the form of nail polish names, separated by the type of nail polish it is. 
 2. Uses custom functions to randomize a nail polish based on the type of polish it is, as well as randoizing between multiple lists depending on what the user's input is. 
-3. Analyzes the nail polish numbers using built-in Python features.
+3. Analyzes the nail polish numbers using built-in Python features and statistics.
 4. Prints statements with custom responses based off the user’s input.
 5. Vizualizes the amount of nail polishes in the program using matplotlib.  
 6. Includes a README explaining the generator and its functions. 
