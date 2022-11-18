@@ -4,13 +4,16 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 import statistics
 
+
 seconds = 2
 sleep(seconds)
 
 ## Lists here
+
 # Changing to make interactive with inputs.
 
 nail_base = ('Smoothing Base', 'Peely Base', 'Long Lasting Base')
+
 
 # Main polishes will be categorized as 'Metallics', 'Rainbow Holo', or 'Multichrome'.
 
@@ -20,6 +23,7 @@ nail_rainbow_holo = ('Blue Freezie', 'Purple Slushie', 'Magenta Jelly', 'Red Lic
 
 nail_multichrome = ('Chameleon Coat', "Blue Ain't Slick", 'Missed-Shift', 'Purple with Envy', "Cats' Evation")
 
+
 # Toppers will be categoized as 'Holo Topper' and 'Unicorn Skin Topper'
 
 nail_topper_holo = ('Flakie Holo Taco', 'Linear Holo Taco', 'Scattered Holo Taco')
@@ -27,6 +31,7 @@ nail_topper_holo = ('Flakie Holo Taco', 'Linear Holo Taco', 'Scattered Holo Taco
 nail_topper_unicorn = ('Aurora Unicorn Skin', 'Solar Unicorn Skin', 'Cosmic Unicorn Skin', 'Sonic Unicorn Skin', 'Galatic Unicorn Skin', 'Lunar Unicorn Skin')
 
 nail_finishes = ('Glossy Taco', 'Super Glossy Taco', 'Matte Taco')
+
 
 #Lists for polish numbers
 
@@ -37,6 +42,7 @@ total_polish_numbers = len(nail_base), len(nail_metallics), len(nail_rainbow_hol
 program_polishes = 'Bases', 'Main Polishes', 'Toppers', 'Finishes'
 
 number_program_polishes = len(nail_base), len(nail_metallics + nail_rainbow_holo + nail_multichrome), len(nail_topper_holo + nail_topper_unicorn), len(nail_finishes)
+
 
 # Calculations
 
@@ -56,6 +62,8 @@ mode_number = statistics.mode(number_program_polishes)
 
 sum_number = sum(number_program_polishes)
 
+
+
 # Polish base choice 
 
 def choose_base_polish(): 
@@ -63,6 +71,7 @@ def choose_base_polish():
     return nail_base_random
 
 nail_base_choice = 'First, start with a base of ' + str(choose_base_polish()) + '.'
+
 
 
 # Main nail polish choice
@@ -98,6 +107,7 @@ def main_polish_choice():
             print(main_sentence)
 
 
+
 # Topper nail polish choice choice
 
 def choose_holo_topper():
@@ -125,6 +135,7 @@ def topper_polish_choice():
             print(topper_sentence)
 
 
+
 # Finish polish function
 
 def choose_finish_polish(): 
@@ -132,6 +143,7 @@ def choose_finish_polish():
     return nail_finish_random
 
 nail_finish_choice = 'Finally, end with a finish of ' + str(choose_finish_polish()) + '.'
+
 
 
 # Program here
@@ -179,6 +191,7 @@ if __name__ == '__main__':
     sleep(1)
 
 
+
 ## Vizulaizations 
 #Totals for all lists
 x_axis = ['Bases', 'Metallics', 'Rainbow Holo', 'Multichrome', 'Holo Taco', 'Unicorn Skins', 'Toppers']
@@ -189,6 +202,7 @@ plt.title('Amounts of Polishes in Each List', fontsize=12)
 plt.xlabel('Type of Polish', fontsize=8)
 plt.ylabel('Amount of Polishes', fontsize=8)
 plt.show()
+
 
 
 #Totals for nail polish types

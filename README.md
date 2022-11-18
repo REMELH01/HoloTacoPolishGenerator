@@ -13,8 +13,9 @@ In this project, there are 4 categories for the nail polishes: Base, Main, Toppe
 
 ## Getting Started 
 1. Clone 'https://github.com/REMELH01/HoloTacoPolishGenerator' 
-2. Make sure you have matplotlib installed.
-3. Respond to the inputs within the program when it begins. 
+2. Make sure you have matplotlib installed ( '''pip install matplotlib''' )
+3. Make sure you have pandas installed ( '''pip install pandas ''' )
+4. Respond to the inputs within the program when it begins. 
 
 ## Features 
 1. Includes lists of data in the form of nail polish names, separated by the type of nail polish it is. 
@@ -23,6 +24,13 @@ In this project, there are 4 categories for the nail polishes: Base, Main, Toppe
 4. Prints statements with custom responses based off the user’s input.
 5. Vizualizes the amount of nail polishes in the program using matplotlib.  
 6. Includes a README explaining the generator and its functions. 
+
+## Code Louisville Requirements Used
+1. "Read data in: Make a list, dictionary, tuple, or other standard python data structure to read in data for your program." Several lists were created.
+2. Manipulate and clean your data. "Use custom functions or lambdas to perform specific operations to clean or manipulate your data, return those values, then use them in other parts of your project." Several custom functions used.
+3. Analyze your data. "Use at least 5 different built-in Python functions to find out something about your data. If you had a list for example, finding the length of that list with len(<list>) does tell us a little bit about the data." Used several, including functions from "statistics".
+4. Visualize your data. "Make 2 basic plots with matplotlib, seaborn, or any other kind of visualization library that you think looks interesting." 2 plots are used at the end of the program.
+5. Interpret your data and graphical output. "If using some format other than a notebook, make sure your README explains your project." There is an interpreting and analyzing section in this README.md.
 
 ## Limitations 
 Holo Taco is a vastly expanding brand of nail polish created by Cristine Rotenberg, also known as simplynailogical on YouTube. This program only includes a small percentage of the nail polishes made and produced by Holo Taco. The only polishes included in this program are the ones personally owned by the creator of the program. 
