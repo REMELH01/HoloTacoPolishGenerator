@@ -13,9 +13,15 @@ In this project, there are 4 categories for the nail polishes: Base, Main, Toppe
 
 ## Getting Started 
 1. Clone 'https://github.com/REMELH01/HoloTacoPolishGenerator' 
-2. Make sure you have matplotlib installed ( '''pip install matplotlib''' )
-3. Make sure you have pandas installed ( '''pip install pandas ''' )
-4. Respond to the inputs within the program when it begins. 
+2. Make sure you have matplotlib installed. 
+'''
+pip install matplotlib
+'''
+3. Make sure you have pandas installed. 
+'''
+pip install pandas
+''' 
+gi4. Respond to the inputs within the program when it begins. 
 
 ## Features 
 1. Includes lists of data in the form of nail polish names, separated by the type of nail polish it is. 
